@@ -54,4 +54,9 @@ Wikilatic is a web application that illustrates statistics about a set of Wikipe
 
 ![Processdatabase](https://github.com/Jordan-Ly/WikiLatic/blob/master/image/Processdatabase.png)
 
+## Open the Wikilatic page
+- Open your browser and access "http://localhost:4200" URL.
+
+![Homepage](https://github.com/Jordan-Ly/WikiLatic/blob/master/image/Wikilatic.png)
+
 
