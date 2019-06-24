@@ -40,4 +40,18 @@ Wikilatic is a web application that illustrates statistics about a set of Wikipe
     + Import Bots account: mongoimport --db wikipedia --collection bots --type tsv --fields user --file <Dir where you put the dataset>\Dataset\Bot.txt
   
 ### Open the backend and frontend with IntelliJ IDEA
+- Backend
+![Backend](https://github.com/Jordan-Ly/WikiLatic/blob/master/image/backend.png)
+
+- Frontend
+![Frontend](https://github.com/Jordan-Ly/WikiLatic/blob/master/image/frontend.png)
+
+### Change String field in the database to Date
+- Open Robo3T and connect to the localhost.
+- Access the "revisions" collection in the "Wikipedia" database
+- Type the following commandline in the Robo3T: db.revisions.find().forEach(function(doc){ doc.timestamp = new ISODate(doc.timestamp); db.revisions.save(doc)
+});
+
+![Processdatabase](https://github.com/Jordan-Ly/WikiLatic/blob/master/image/Processdatabase.png)
+
 
