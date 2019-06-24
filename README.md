@@ -1,5 +1,5 @@
 ## Table of contents
-* [WikiLactic](wikilatic)
+* [WikiLactic](README.md#wikilatic)
 * [Technologies](technologies)
 * [Install](install)
 
