@@ -14,7 +14,7 @@ Wikilatic is a web application that illustrates statistics about a set of Wikipe
 # Install
 
 ## IDE
-- To run this project, first install the IntelliJ IDEA Community IDE.
+- To run this project, first install the IntelliJ IDEA Community.
 
 ## Secondly, install the following software:
 ### 1. Node.js 
@@ -31,3 +31,13 @@ Wikilatic is a web application that illustrates statistics about a set of Wikipe
 - Download Robo 3T
 
 ## Process the file
+### Import data to MongoDB
+- Access the directory where you install the MongoDB and go to the bin folder using with terminal.
+- Start MongoDB with the following commandline: "mongodb".
+- Import the dataset to the database with the following commandlines
+    + Import revisions for %i in (<Dir where you put the dataset>\Dataset\revisions\*) do mongoimport --file %i --type json --db wikipedia --collection revisions --jsonArray
+    + Import Admin account: mongoimport --db wikipedia --collection admins --type tsv --fields user --file <Dir where you put the dataset>\Dataset\Admin.txt
+    + Import Bots account: mongoimport --db wikipedia --collection bots --type tsv --fields user --file <Dir where you put the dataset>\Dataset\Bot.txt
+  
+### Open the backend and frontend with IntelliJ IDEA
+
